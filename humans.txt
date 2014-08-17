@@ -3,13 +3,13 @@
 
 # TEAM
 
-    Miguel Laginha -- @brecke
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    the middleman static site generator (open source project)
+    <name>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    Normalize.css, jQuery, Modernizr

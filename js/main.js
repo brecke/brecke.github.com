@@ -1,1 +1,1 @@
-
+$.backstretch("img/background.jpg");

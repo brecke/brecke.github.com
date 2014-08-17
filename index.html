@@ -5,135 +5,125 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <!-- Use title if it's in the page YAML frontmatter -->
-        <title>Home of Miguel Laginha</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link rel="stylesheet" href="css/ink.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/foundation.css">
-        <link rel="stylesheet" href="css/app.css">
-        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        
-<div class="row">    
-  
-  <!-- Main Feed -->
-  <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-  <div class="six columns push-three">
-    
-    <!-- Feed Entry -->
-    <div class="row ">
-      
-      <div class="twelve columns">
-        <p>Hi, my name is <strong>Miguel Laginha</strong> and I live in <a href="http://madeincoimbra.org/">Coimbra, Portugal</a>. I'm an opinionated project lead and an open {source|Web|data} evangelist at <a href="https://www.ipn.pt">Instituto Pedro Nunes</a>.</p>
-      </div>
-    </div
-    <div class="row">
-      
-      <div class="ten columns push-two">
-        
-        <h6>Also,</h6>
-        
-        <!-- Twitter -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/twitter.png" /></div>
-  <div class="ten columns"><p>I <a href="https://twitter.com/brecke">tweet</a> often</p></div>
-</div>
-<!-- End Feed Entry -->
-        
-        <!-- blog -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/tumblr.png" /></div>
-  <div class="ten columns"><p>I <a href="http://blog.miguellaginha.com/">blog</a> regularly</p></div>
-</div>
-<!-- End Feed Entry -->
-        
-        <!-- github -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/github.png" /></div>
-  <div class="ten columns"><p>I <a href="https://github.com/brecke">contribute</a> to open source</p></div>
-</div>
-<!-- End Feed Entry -->
-        
-        <!-- pinboard -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/pinboard.png" /></div>
-  <div class="ten columns"><p>I <a href="http://pinboard.in/u:brecke">bookmark</a> publicly</p></div>
-</div>
-<!-- End Feed Entry -->
-        
-        <!-- readmill -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/readmill.png" /></div>
-  <div class="ten columns"><p>I <a href="https://readmill.com/brecke">read</a> socially</p></div>
-</div>
-<!-- End Feed Entry -->  
-        
-        <!-- linkedin -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/linkedin.png" /></div>
-  <div class="ten columns"><p>I'm on <a href="http://pt.linkedin.com/in/brecke/">Linkedin</a></p></div>
-</div>
-<!-- End Feed Entry -->
+        <div id="container" class="ink-grid">
 
-        <!-- google plus -->
-        <!-- Feed Entry -->
-<div class="row feed_entry">
-  <div class="two columns mobile-one"><img class="feed_img" src="img/gplus.png" /></div>
-  <div class="ten columns"><p>I'm on <a href="http://google.com/+MiguelLaginhadotcom">G+</a></p></div>
-</div>
-<!-- End Feed Entry -->
+            <!--[if lte IE 9 ]>
+            <div class="ink-alert basic" role="alert">
+                <button class="ink-dismiss">&times;</button>
+                <p>
+                    <strong>You are using an outdated Internet Explorer version.</strong>
+                    Please <a href="http://browsehappy.com/">upgrade to a modern browser</a> to improve your web experience.
+                </p>
+            </div>
+            <![endif]-->
 
-      <!-- resume -->
-              <!-- Feed Entry -->
-      <div class="row feed_entry">
-        <div class="two columns mobile-one"><img class="feed_img" src="img/resume.png" /></div>
-        <div class="ten columns"><p>My resume is on <a href="https://github.com/brecke/resume">Github</a></p></div>
-      </div>
-      <!-- End Feed Entry -->
-      
-      <!-- current project -->
-              <!-- Feed Entry -->
-      <div class="row feed_entry">
-        <div class="two columns mobile-one"><img class="feed_img" src="img/project.png" /></div>
-        <div class="ten columns"><p>I'm currently working on an <a href="http://www.ost.pt">open data platform for urban mobility</a></p></div>
-      </div>
-      <!-- End Feed Entry -->
-        
-      </div>
-    </div>
-    <!-- End Feed Entry -->
-     
-  </div>
-</div>
+            <div id="sticky" class="column-group">
+              <!-- first row -->
+                <div id="header" class="all-100">
+                  <div id="photo-header">
+                    <div id="photo">
+                      <img src="img/profile.png" />
+                    </div>
+                  </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+                  <div id="text-header">
+                    <h1>Hi,</h1>
+                    <h2>my name is Miguel Laginha.</h2>
+                  </div>
+
+                  <hr>
+                </div>
+              </div>
+
+              <div class="column-group">
+                <!-- second row -->
+                <div id="content" class="all-100">
+
+                  <h2><span>#</span> About me</h2>
+                  <p>
+                    I'm an opinionated software engineer and an {{ open['web', 'data', 'source'] }} evangelist, living in <a href="http://www.madeincoimbra.org/">Coimbra</a>, Portugal.</p>
+                  </p>
+
+                  <hr>
+
+                  <h2><span>#</span> Profile</h2>
+                  <p>
+                    These days I’m more of a tech lead than a software developer. That means managing teams technically and help them achieve the best possible results by making a lot of decisions (and compromises). I strongly believe in working smarter, not harder.
+                  </p>
+                <!--
+                  <p>
+                    Technically I have used the right tool for the job™ in most of my development projects, including Ruby on Rails, Python & Django, Java and Javascript. I love crafting products no matter the technology I’m using, as long as it solves the problem at hand and is open source. I am very eager to learn new things, be it the new framework on the block or agile practices (kanban is my favorite).
+                  </p>
+                  <p>
+                    I also do some devops work and help maintaining internal services based on open source products. That includes project management tools, collaboration tools, chat rooms, versioning servers, etc.
+                  </p>
+                -->
+                  <p>
+                    I try to make time for pet projects regularly for solving small daily problems and general experimenting and learning.
+                  </p>
+
+                  <hr>
+
+                  <h2><span>#</span> Online presence</h2>
+                  <p>
+                    I <a href="#"> tweet <img src="img/twitter.png" alt="twitter" /> </a>often and <a href="#">blog <img src="img/tumblr.png" alt="tumblr" /></a> regularly;
+                  </p>
+
+                  <p>
+                    I contribute to <a href="#">open source <img src="img/github.png" alt="github" /></a> from time to time;
+                  </p>
+                  <p>
+                    I <a href="#">bookmark <img src="img/pinboard.png" alt="pinboard" /></a> publicly a lot of technical stuff;
+                  </p>
+                  <p>
+                    I am <a href="#"> linked <img src="img/linkedin.png" alt="linkedin" /></a> with people, mostly Portuguese.
+                  </p>
+                  <br/>
+                  <p>
+                    Feel free to contact me at this domain.
+                  </p>
+                  <hr class="last">
+
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.backstretch.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            var _gaq=[['_setAccount','UA-38191344-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
     </body>
 </html>

@@ -1,6 +1,6 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 /*
- * HTML5 Boilerplate
- *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
@@ -10,7 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-
 html,
 button,
 input,
@@ -19,14 +18,14 @@ textarea {
     color: #222;
 }
 
-body {
+html {
     font-size: 1em;
     line-height: 1.4;
 }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
+ * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
 
@@ -44,20 +43,24 @@ body {
  * A better looking default horizontal rule
  */
 
-hr {
+/*hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+}*/
 
 /*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
  */
 
-img {
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
 
@@ -80,10 +83,10 @@ textarea {
 }
 
 /* ==========================================================================
-   Chrome Frame prompt
+   Browse Happy prompt
    ========================================================================== */
 
-.chromeframe {
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -94,16 +97,138 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  color: #363636;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cc0000;
+}
 
 
+div#container {
+  /*background-color: #EDEDED;*/
+  margin-top: 100px;
+  margin-bottom: 75px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px #555;
+  /*border: 2px solid #cc0000;*/
+}
+
+div#header {
+}
+
+div#container hr {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  background: url(../img/horizontal-rule-gray-3stars.png) no-repeat center;
+  border: none;
+  display: block;
+}
+
+div#container hr.last {
+  background: url(../img/horizontal-rule-gray-1star.png) no-repeat center;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #363636;
+  font-family: 'Special Elite', cursive;
+  /*color: #cc0000;*/
+}
+
+div#header h1 {
+  color: #cc0000;
+}
+
+h2 span {
+  color: #cc0000;
+}
+
+div#photo-header {
+  text-align: center;
+
+}
+
+div#photo {
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  /*padding: 5px;*/
+  /*background: #ededed;*/
+  display: inline-block;
+  /*box-shadow: 2px 2px 2px #888;*/
+}
+
+div#photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+div#text-header {
+  padding-top: 20px;
+}
+
+div#content {
+  padding-bottom: 10px;
+}
+
+div#content p {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+div#content img {
+  width: 24px;
+  height: 24px;
+}
 
 
-
-
-
-
-
-
+/* for xlarge screens */
+@media screen and (min-width: 1261px) {
+  /* your css for xlarge screens goes here ... */
+  div#container {
+    width: 600px;
+  }
+}
+/* for large screens */
+@media screen and (min-width: 961px) and (max-width: 1260px) {
+  /* your css for large screens goes here ... */
+  div#container {
+    width: 600px;
+  }
+}
+/* for medium screens */
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  /* your css for medium screens goes here ... */
+  div#container {
+    width: 600px;
+  }
+}
+/* for small screens */
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  /* your css for small screens goes here ... */
+  div#container {
+    width: 300px;
+  }
+}
+/* for tiny screens */
+@media screen and (max-width: 320px) {
+  /* your css for tiny screens goes here ... */
+  div#container {
+    width: 300px;
+  }
+}
 
 
 
@@ -130,7 +255,7 @@ textarea {
     content: "";
     display: block;
     width: 0;
-    height: 100%;
+    height: 150%;
 }
 
 /*
@@ -213,7 +338,7 @@ textarea {
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
+   These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
@@ -221,8 +346,10 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -235,7 +362,7 @@ textarea {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow:none !important;
+        box-shadow: none !important;
         text-shadow: none !important;
     }
 
