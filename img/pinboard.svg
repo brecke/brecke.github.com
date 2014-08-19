@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>pinboard</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="pinboard" sketch:type="MSLayerGroup" fill="#010000">
+            <path d="M64.27904,181.8624 L108.18816,182.32832 L203.008,291.62752 L198.96064,345.50784 L256.89088,287.58528 L418.31424,419.70432 L285.8496,258.61888 L343.77728,200.69632 L289.8944,204.74112 L180.59776,109.92128 L180.13184,66.01472 L64.27904,181.8624 L64.27904,181.8624 Z M512,256 C512,397.38624 397.38624,512 256,512 C114.61376,512 0,397.38624 0,256 C0,114.61376 114.61376,0 256,0 C397.38624,0 512,114.61376 512,256 L512,256 Z" id="Fill-3" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
