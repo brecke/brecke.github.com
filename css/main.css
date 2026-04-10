@@ -217,8 +217,7 @@ button {
 }
 
 .site-masthead::after,
-.content-section::before,
-.site-footer::before {
+.content-section::before {
     content: '✦';
     position: absolute;
     left: 0;
@@ -227,13 +226,11 @@ button {
     letter-spacing: 0.35em;
 }
 
-.site-masthead::after,
-.site-footer::before {
+.site-masthead::after {
     bottom: 0;
 }
 
 .site-masthead::before,
-.site-footer::after,
 .content-section::after {
     content: '';
     position: absolute;
@@ -242,8 +239,7 @@ button {
     border-top: 1px solid var(--border);
 }
 
-.site-masthead::before,
-.site-footer::after {
+.site-masthead::before {
     bottom: 0.45rem;
 }
 
@@ -601,6 +597,8 @@ html[data-theme='dark'] .fact-list div {
 
 .site-footer {
     margin-top: var(--space-6);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border);
     color: var(--text-muted);
     font-size: 0.82rem;
 }
